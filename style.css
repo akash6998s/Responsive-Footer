@@ -1,0 +1,160 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    /* padding: 100px 0 30px; */
+    /* font-size: 13px; */
+    /* line-height: 20px; */
+}
+
+.footer-top{
+    width: 90%;
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-col{
+    flex-basis: 25%;
+    /* padding: 10%; */
+}
+ 
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo{
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.email-sent{
+    background-color: #185CB7;
+    padding: 10px;
+}
+
+.footer-adress {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.footer-email{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+form input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* .social-media-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+} */
+
+.social-media-icons{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.footer-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+
+@media (max-width: 992px) {
+    footer{
+        bottom: unset;
+    }
+
+    .footer-col{
+        flex-basis: 50%;
+    }
+    
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 50%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    footer{
+        bottom: unset;
+    }
+
+    .footer-col{
+        flex-basis: 100%;
+    }
+    
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
